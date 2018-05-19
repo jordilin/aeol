@@ -1,0 +1,6 @@
+[package]
+name = "aeol"
+version = "0.1.0"
+authors = ["Jordi Carrillo <jordilin@gmail.com>"]
+
+[dependencies]
