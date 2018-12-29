@@ -12,7 +12,8 @@ fn main() {
     }
     let f = File::open(&args[1]).unwrap();
     let reader = BufReader::new(f);
-    for line in reader.lines() {
-        println!("{}", line.unwrap());
+    for line_opt in reader.lines() {
+        let line = line_opt.unwrap();
+        println!("{}", line.trim_end());
     }
 }
